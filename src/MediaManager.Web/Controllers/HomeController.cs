@@ -11,18 +11,7 @@ namespace MediaManager.Web.Controllers
 
         public ActionResult About()
         {
-            var m = new CombinedModel();
-            m.Person = new MyModel();
-            m.Person.FirstName = "Mike";
-            m.Person.LastName = "Eaton";
-
-            m.Random = new AnotherModel();
-            m.Random.SomePieceOfData = "This is a random string";
-
-            ViewBag.Message = "Your application description page.";
-            ViewBag.SubTitle = "This is the title";
-
-            return View(m);
+            return View();
         }
 
         public ActionResult Contact()

@@ -28,5 +28,7 @@ namespace MediaManager.Web.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<MediaManager.Data.DVD> DVDs { get; set; }
     }
 }
